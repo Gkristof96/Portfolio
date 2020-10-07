@@ -30,6 +30,7 @@ export const CardWrapper = styled.div`
     justify-content: space-around;
     @media (max-width: 768px) {
         flex-direction: column;
+        align-items: center;
     }
 `
 

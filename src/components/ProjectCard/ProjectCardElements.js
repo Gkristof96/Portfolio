@@ -11,11 +11,25 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-conten: center;
+
+    @media (max-width: 768px) {
+        max-width: 250px;
+        height: 550px;
+        margin: 10px 0;
+    }
+
+    &:hover {
+        transform: scale(1.009);
+    }
 `
 export const Img = styled.img`
     margin: 25px 0;
-    width: 325px;
+    max-width: 325px;
+    width: 100%;
     border-radius: 5px;
+    @media (max-width: 768px) {
+        max-width: 200px;
+    }
 `
 
 export const Description = styled.p`
