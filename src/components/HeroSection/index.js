@@ -18,6 +18,7 @@ const HeroSection = () => {
                     <Button primary={true}
                     big={true}
                     dark={true}
+                    rounded={true}
                      onMouseEnter={onHover} onMouseLeave={onHover} to='projects'>See more {hover ? <ArrowForward /> : <ArrowRight />}</Button>
                 </HeroBtnWrapper>
             </HeroContent>

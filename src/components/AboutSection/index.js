@@ -1,11 +1,12 @@
 import React from 'react'
-import { AboutContainer, AboutWrapper, Title, ImageWrapper, TextWrapper, Img } from './AboutElements'
+import { AboutContainer, AboutWrapper, ImageWrapper, TextWrapper, Img } from './AboutElements'
+import { Title } from '../TitleElements'
 const About = () => {
     return (
         <>
           <AboutContainer>
             <AboutWrapper>
-                <Title>About Me</Title>
+                <Title bigText={true} lightText={false}>About Me</Title>
                 <ImageWrapper>
                     <Img src='images/me.jpg' alt='me' />
                 </ImageWrapper>

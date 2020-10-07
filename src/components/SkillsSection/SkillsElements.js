@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SkillsContainer = styled.div`
-    background: #222831;
+    background: #fff;
     color: #000;
 `
 

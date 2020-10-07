@@ -6,30 +6,20 @@ export const AboutContainer = styled.div`
 
 export const AboutWrapper = styled.div`
     display: grid;
-    z-index: 1;
     height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    margin-top: 10vh;
+    padding-top: 5vh;
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: 40% 60%;
     grid-template-areas: "row1 row1" "col1 col2";
 
     @media (max-width: 768px) {
         height: auto;
-        margin-top: 0;
         grid-template-rows: 1fr 1fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: "row1" "col1" "col2";
     }
-`
-
-export const Title = styled.div`
-    grid-area: row1;
-    align-self: center;
-    justify-self: center;
-    font-size: 64px;
-    color: #212121;
 `
 
 export const ImageWrapper = styled.div`
