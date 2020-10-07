@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
-    background: #fff;
+    background: #222831;
     color: #000;
 `
 

@@ -1,95 +1,74 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-    background: #393e46;
-    color: #fff;
+    background: #fff;
 `
 
 export const AboutWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 100vh;
+    height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    justify-content: center;
-`
-
-export const Row = styled.div`
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    height: 90vh;
     margin-top: 10vh;
+    grid-template-rows: 1.5fr 8fr;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "row1 row1" "col1 col2";
+
     @media (max-width: 768px) {
+        height: auto;
+        margin-top: 0;
+        grid-template-rows: 1fr 1fr auto;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
+        grid-template-areas: "row1" "col1" "col2";
     }
 `
 
-export const Column1 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    @media (max-width: 768px) {
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
+export const Title = styled.div`
+    grid-area: row1;
+    align-self: center;
+    justify-self: center;
+    font-size: 64px;
+    color: #212121;
 `
-export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    @media (max-width: 768px) {
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
+
+export const ImageWrapper = styled.div`
+    grid-area: col1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 export const TextWrapper = styled.div`
-    width: 100%;
-`
-
-export const Header = styled.h1`
-    margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.1;
-    font-weight: 600;
-    color: #f7f8fa;
-
-    @media screen and (max-width: 768px) {
-        font-size: 32px;
-    }
-`
-
-export const Description = styled.p`
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: #010606;
-`
-export const ImgWrapper = styled.div`
-    width: 100%;
-    height: 100%;
+    grid-area: col2;
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    align-items: center;
+    font-size: 28px;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    @media (max-width: 1200px) {
+        font-size: 18px;
+    }
+    @media (max-width: 768px) {
+        padding: 50px 0;
+    }
 `
 
 export const Img = styled.img`
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin: 25px 0;
-    @media screen amd (max-width: 1200px) {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 3px rgba(0,0,0,0.25);
+    @media (max-width: 1200px) {
         width: 300px;
         height: 300px;
     }
-    @media screen and (max-width: 500px) {
+    @media (max-width: 500px) {
         width: 250px;
         height: 250px;
     }
 `
+
 
 
