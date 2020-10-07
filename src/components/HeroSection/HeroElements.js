@@ -10,16 +10,6 @@ export const HeroContainer = styled.div`
     height: 90vh;
     position: relative;
     z-index: 1;
-
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom :0;
-        right: 0;
-        background: lineard-gradient(180deg,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.9) 100%)
-    }
 `
 
 export const HeroBg = styled.div`
