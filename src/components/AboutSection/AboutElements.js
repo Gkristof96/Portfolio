@@ -37,6 +37,8 @@ export const TextWrapper = styled.div`
     color: #757575;
     font-family: 'Roboto', sans-serif;
     padding: 0 10px;
+    padding-right: 100px;
+    text-align: justify;
     @media (max-width: 1200px) {
         font-size: 18px;
     }

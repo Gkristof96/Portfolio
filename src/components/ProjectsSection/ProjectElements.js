@@ -7,7 +7,6 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsWrapper = styled.div`
     display: grid;
-    z-index: 1;
     height: 90vh;
     max-width: 80%;
     margin: 0 auto;
