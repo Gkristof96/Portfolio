@@ -20,7 +20,7 @@ const Navbar = ({toggle}) => {
         <>
         <Nav scroll={scroll}>
             <NavbarContainer>
-                <NavLogo to='home'>
+                <NavLogo to='/'>
                     Kristóf's Site
                 </NavLogo>
                 <HamburgerIcon onClick={toggle}>
