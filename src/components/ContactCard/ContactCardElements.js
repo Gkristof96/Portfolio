@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CardContainer = styled.div`
     grid-area: col2;
     width: 500px;
-    height: 650px;
+    height: 550px;
     background: #0092CA;
     border-radius: 5px;
     margin-right: 50px;
@@ -32,7 +32,7 @@ export const Form = styled.form`
 `
 
 export const Name = styled.input`
-    height: 75px;
+    height: 50px;
     border-radius: 5px;
     border: none;
     margin-bottom: 30px;
@@ -45,7 +45,7 @@ export const Name = styled.input`
 `
 
 export const Email = styled.input`
-    height: 75px;
+    height: 50px;
     border-radius: 5px;
     border: none;
     margin-bottom: 30px;

@@ -4,7 +4,7 @@ import { Title } from '../TitleElements'
 const About = () => {
     return (
         <>
-          <AboutContainer>
+          <AboutContainer id='about'>
             <AboutWrapper>
                 <Title bigText={true} lightText={false}>About Me</Title>
                 <ImageWrapper>

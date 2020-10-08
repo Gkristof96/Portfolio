@@ -6,17 +6,17 @@ const Navbar = ({toggle}) => {
         <>
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/'>
+                <NavLogo to='home'>
                     Kristóf's Site
                 </NavLogo>
                 <HamburgerIcon onClick={toggle}>
                     <FaBars />
                 </HamburgerIcon>
                 <NavMenu>
-                    <NavItem><NavLinks to='about'>About</NavLinks></NavItem>
-                    <NavItem><NavLinks to='projects'>Projects</NavLinks></NavItem>
-                    <NavItem><NavLinks to='skills'>Skills</NavLinks></NavItem>
-                    <NavItem><NavLinks to='contact'>Contact</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='about'>About</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='projects'>Projects</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='skills'>Skills</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='contact'>Contact</NavLinks></NavItem>
                 </NavMenu>
             </NavbarContainer>
         </Nav>

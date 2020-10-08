@@ -5,7 +5,7 @@ import ProjectCard from '../ProjectCard';
 const Projects = () => {
     return (
         <>
-          <ProjectsContainer>
+          <ProjectsContainer id='projects'>
             <ProjectsWrapper>
                 <Title bigText={true} lightText='false'>My Projects</Title>
                 <CardWrapper>

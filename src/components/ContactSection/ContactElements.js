@@ -29,6 +29,7 @@ export const TextWrapper = styled.div`
     font-size: 28px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 60px 0;
     margin-left: 50px;
     @media screen and (max-width: 768px) {
