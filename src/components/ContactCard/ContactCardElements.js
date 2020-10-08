@@ -30,9 +30,10 @@ export const Form = styled.form`
     height: 100%;
     margin: auto;
 `
-
-export const Name = styled.input`
-    height: 50px;
+export const Input = styled.input.attrs({
+    type: "text",
+  })`
+  height: 50px;
     border-radius: 5px;
     border: none;
     margin-bottom: 30px;
@@ -42,14 +43,17 @@ export const Name = styled.input`
     &:focus {
         outline: none;
     }
-`
+  `
+export const Name = styled(Input).attrs({
+    type: 'text',
+    placeholder: 'Name',
+})``
 
-export const Email = styled.input`
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 30px;
-`
+export const Email = styled(Input).attrs({
+    type: 'email',
+    placeholder: 'Email',
+})``
+
 export const Subject = styled.textarea`
     height: 150px;
     border-radius: 5px;
@@ -57,6 +61,11 @@ export const Subject = styled.textarea`
     margin-bottom: 30px;
     padding: 10px;
     resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    &:focus {
+        outline: none;
+    }
 `
 
 export const Button = styled.input.attrs({
