@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({scroll}) => (scroll ? '#222' : 'transparent')};
     height: 100px;
     display: flex;
     justify-content: center;
@@ -11,6 +11,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
+    margin-top: -100px;
     z-index: 10;
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -33,7 +34,7 @@ export const NavLogo = styled(LinkR)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 12px;
     font-weight: bold;
     text-decoration: none;
 `

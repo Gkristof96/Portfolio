@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Nav, NavbarContainer, NavLogo, HamburgerIcon, NavMenu, NavItem, NavLinks} from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 const Navbar = ({toggle}) => {
+    const [scroll, setScroll] = useState(false);
+
+    const  changeNav = () => {
+        if(window.scrollY >= 100) {
+            setScroll(true)
+        }
+        else {
+            setScroll(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll',changeNav)
+    },[])
     return (
         <>
-        <Nav>
+        <Nav scroll={scroll}>
             <NavbarContainer>
                 <NavLogo to='home'>
                     Kristóf's Site
