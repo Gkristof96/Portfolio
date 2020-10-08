@@ -6,4 +6,8 @@ export const Title = styled.div`
     justify-self: center;
     font-size: ${({bigText}) => (bigText ? '64px' : '24px')};
     color: ${({lightText}) => (lightText ? '#eeeeee' : '#212121')};
+
+    @media screen and (max-width: 768px) {
+        font-size: ${({bigText}) => (bigText ? '48px' : '24px')};
+    }
 `

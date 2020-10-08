@@ -9,14 +9,14 @@ export const AboutWrapper = styled.div`
     height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    padding-top: 5vh;
+    padding: 5vh 0;
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: 40% 60%;
     grid-template-areas: "row1 row1" "col1 col2";
 
     @media (max-width: 768px) {
         height: auto;
-        grid-template-rows: 1fr 1fr auto;
+        grid-template-rows: 1fr 2fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: "row1" "col1" "col2";
     }
@@ -33,16 +33,14 @@ export const TextWrapper = styled.div`
     grid-area: col2;
     display: flex;
     align-items: center;
-    font-size: 28px;
     color: #757575;
     font-family: 'Roboto', sans-serif;
+    font-size: 28px;
     padding: 0 10px;
     padding-right: 100px;
     text-align: justify;
-    @media (max-width: 1200px) {
-        font-size: 18px;
-    }
     @media (max-width: 768px) {
+        font-size: 18px;
         padding: 50px 0;
     }
 `

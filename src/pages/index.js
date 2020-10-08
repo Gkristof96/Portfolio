@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection'
 import ProjectsSection from '../components/ProjectsSection'
 import SkillsSection from '../components/SkillsSection'
 import ContactSection from '../components/ContactSection'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import { homeObjOne } from '../components/AboutSection/Data'
@@ -21,6 +22,7 @@ const Home = () => {
             <ProjectsSection  />
             <SkillsSection />
             <ContactSection />
+            <Footer />
         </>
     )
 }

@@ -10,7 +10,7 @@ export const ProjectsWrapper = styled.div`
     height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    padding-top: 5vh;
+    padding: 5vh 0;
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: 1fr;
     grid-template-areas: "row1" "row2";

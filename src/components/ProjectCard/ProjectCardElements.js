@@ -37,4 +37,10 @@ export const Description = styled.p`
     margin: 25px 0;
     color: #212121
     font-size: 18px;
+    
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        tex-align: left;
+    }
 `

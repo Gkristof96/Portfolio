@@ -11,6 +11,7 @@ export const CardContainer = styled.div`
     align-self: center;
     @media screen and (max-width: 768px) {
         margin: 50px 0;
+        width: 250px;
         justify-self: center;
     }
 `

@@ -6,12 +6,12 @@ export const ContactContainer = styled.div`
 
 export const ContactWrapper = styled.div`
     display: grid;
-    z-index: 1;
-    height: 100vh;
+    height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
+    padding: 5vh 0;
+    grid-template-rows: 1.5fr 8fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'row1 row1' 'col1 col2';
 
     @media screen and (max-width: 768px) {
@@ -24,14 +24,15 @@ export const ContactWrapper = styled.div`
 
 export const TextWrapper = styled.div`
     grid-area: col1;
-    font-size: 28px;
     color: #eee;
     font-family: 'Roboto', sans-serif;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     margin: 60px 0;
     margin-left: 50px;
     @media screen and (max-width: 768px) {
-        margin: 0;
+        font-size: 18px;
+        margin: 25px 0;
     }
 `
