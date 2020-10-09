@@ -13,12 +13,12 @@ export const ProjectsWrapper = styled.div`
     padding: 5vh 0;
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "row1" "row2";
+    grid-template-areas: "title" "row2";
 
     @media (max-width: 768px) {
         height: auto;
         grid-template-rows: 1.5fr auto;
-        grid-template-areas: "row1" "row2";
+        grid-template-areas: "title" "row2";
     }
 `
 

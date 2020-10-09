@@ -3,7 +3,7 @@ import { ButtonR } from '../ButtonElements'
 import { Title } from '../TitleElements'
 import { CardContainer, Img, Description} from './ProjectCardElements'
 
-const ProjectCard = ({title, image, description}) => {
+const ProjectCard = ({title, image, description, url}) => {
     return (
         <>
             <CardContainer>
@@ -14,7 +14,7 @@ const ProjectCard = ({title, image, description}) => {
                     primary={true}
                     big={true}
                     dark={true}
-                    to='/project'>
+                    href={url}>
                     See More
                 </ButtonR>
             </CardContainer>

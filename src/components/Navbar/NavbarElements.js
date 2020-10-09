@@ -14,6 +14,7 @@ export const Nav = styled.nav`
     margin-top: -100px;
     z-index: 10;
     @media screen and (max-width: 960px) {
+        height: 80px;
         transition: 0.8s all ease;
     }
 `
@@ -22,21 +23,20 @@ export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    width: 100%;
     padding: 0 24px;
-    max-width: 80%;
+    width: 80%
 `
 
 export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
+    align-item: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 28px;
     display: flex;
-    align-items: center;
-    margin-left: 12px;
     font-weight: bold;
     text-decoration: none;
+
 `
 
 export const HamburgerIcon = styled.div`
@@ -44,9 +44,9 @@ export const HamburgerIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%,60%);
+        top: 40px;
+        transform: translateY(-50%);
+        right: 25px;
         font-size: 1.8rem;
         cursor:pointer;
         color: #fff;

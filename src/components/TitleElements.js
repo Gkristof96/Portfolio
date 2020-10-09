@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Title = styled.div`
-    grid-area: row1;
+    grid-area: title;
     align-self: center;
     justify-self: center;
     font-size: ${({bigText}) => (bigText ? '64px' : '24px')};

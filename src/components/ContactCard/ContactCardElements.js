@@ -9,6 +9,9 @@ export const CardContainer = styled.div`
     margin-right: 50px;
     justify-self: flex-end;
     align-self: center;
+    @media (max-width: 1200px) {
+        width: 350px
+    }
     @media screen and (max-width: 768px) {
         margin: 50px 0;
         width: 250px;

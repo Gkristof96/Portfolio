@@ -11,14 +11,14 @@ export const AboutWrapper = styled.div`
     margin: 0 auto;
     padding: 5vh 0;
     grid-template-rows: 1.5fr 8fr;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "row1 row1" "col1 col2";
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "title title" "col1 col2";
 
     @media (max-width: 768px) {
         height: auto;
         grid-template-rows: 1fr 2fr auto;
         grid-template-columns: 1fr;
-        grid-template-areas: "row1" "col1" "col2";
+        grid-template-areas: "title" "col1" "col2";
     }
 `
 
@@ -39,6 +39,10 @@ export const TextWrapper = styled.div`
     padding: 0 10px;
     padding-right: 100px;
     text-align: justify;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        padding: 0 10px;
+    }
     @media (max-width: 768px) {
         font-size: 18px;
         padding: 50px 0;
@@ -51,8 +55,8 @@ export const Img = styled.img`
     border-radius: 5px;
     box-shadow: 0 4px 4px 3px rgba(0,0,0,0.25);
     @media (max-width: 1200px) {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     @media (max-width: 500px) {
         width: 250px;

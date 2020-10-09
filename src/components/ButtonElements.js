@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
-import { Link as LinkR } from 'react-router-dom'
 
 export const ButtonS = styled(LinkS)`
     border-radius: ${({rounded}) => (rounded ? '50px' : '5px')};
@@ -25,7 +24,8 @@ export const ButtonS = styled(LinkS)`
     }
 `
 
-export const ButtonR = styled(LinkR)`
+export const ButtonR = styled.a`
+    grid-area: button;
     border-radius: ${({rounded}) => (rounded ? '50px' : '5px')};
     font-family: 'Roboto', sans-serif;
     font-weight: bold;

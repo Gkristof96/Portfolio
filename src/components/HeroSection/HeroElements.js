@@ -45,6 +45,7 @@ export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 64px;
     text-align: center;
+    font-family: 'Lobster', sans-serif;
 
     @media screen and (max-width: 768px) {
         font-size: 48px;

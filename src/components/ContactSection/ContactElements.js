@@ -12,11 +12,11 @@ export const ContactWrapper = styled.div`
     padding: 5vh 0;
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'row1 row1' 'col1 col2';
+    grid-template-areas: 'title title' 'col1 col2';
 
     @media screen and (max-width: 768px) {
         height: auto;
-        grid-template-areas: 'row1' 'col1' 'col2';
+        grid-template-areas: 'title' 'col1' 'col2';
         grid-template-columns: 1fr;
         grid-template-rows: 1.5fr auto auto;
     }
@@ -32,6 +32,10 @@ export const TextWrapper = styled.div`
     align-items: center;
     margin: 60px 0;
     margin-left: 50px;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        margin: 0 25px;
+    }
     @media screen and (max-width: 768px) {
         font-size: 18px;
         margin: 25px 0;

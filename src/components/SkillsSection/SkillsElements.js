@@ -13,13 +13,13 @@ export const SkillsWrapper = styled.div`
     padding: 5vh 0;
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "row1 row1" "col1 col2";
+    grid-template-areas: "title title" "col1 col2";
 
     @media (max-width: 768px) {
         height: auto;
         grid-template-rows: 1fr auto auto;
         grid-template-columns: 1fr;
-        grid-template-areas: "row1" "col1" "col2";
+        grid-template-areas: "title" "col1" "col2";
     }
 `
 
@@ -32,7 +32,9 @@ export const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: 25px 0;
-
+    @media (max-width: 1200px) {
+        font-size: 20px;
+    }
     @media screen and (max-width: 768px) {
         font-size: 18px;
     }
