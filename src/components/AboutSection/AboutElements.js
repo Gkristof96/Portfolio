@@ -10,9 +10,8 @@ export const AboutWrapper = styled.div`
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 70%;
     grid-template-areas: "title title" "col1 col2";
-    grid-column-gap: 25px;
     @media (max-width: 768px) {
         height: auto;
         grid-template-rows: 1fr 2fr auto;
@@ -44,10 +43,10 @@ export const Img = styled.img`
 export const Description = styled.p`
     color: #757575;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     text-align: justify;
     @media (max-width: 1376px) {
-        font-size: 24px;
+        font-size: 20px;
     }
     @media (max-width: 768px) {
         font-size: 18px;

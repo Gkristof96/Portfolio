@@ -24,7 +24,6 @@ export const NavbarContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-    padding: 0 24px;
     width: 80%;
     position: relative;
 `
