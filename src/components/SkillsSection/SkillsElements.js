@@ -10,7 +10,7 @@ export const SkillsWrapper = styled.div`
     height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    grid-template-rows: 1.5fr 8fr;
+    grid-template-rows: 2r 8fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "title title" "col1 col2";
 

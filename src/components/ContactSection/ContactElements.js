@@ -9,11 +9,9 @@ export const ContactWrapper = styled.div`
     height: 90vh;
     max-width: 80%;
     margin: 0 auto;
-    padding: 5vh 0;
-    grid-template-rows: 1.5fr 8fr;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 8fr;
+    grid-template-columns: 60% 40%;
     grid-template-areas: 'title title' 'col1 col2';
-    grid-column-gap: 10px;
 
     @media screen and (max-width: 768px) {
         height: auto;
@@ -28,19 +26,20 @@ export const TextWrapper = styled.div`
     color: #eee;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    margin: 50px 0;
-    margin-left: 50px;
     @media (max-width: 1376px) {
         font-size: 20px;
-        margin: 70px 25px;
     }
     @media screen and (max-width: 768px) {
         font-size: 18px;
-        margin: 25px 0;
     }
 `
-
+export const CardWrapper = styled.div`
+    grid-area: col2;
+    display: flex;
+    justify-content: center;
+`
 export const Description = styled.p`
+    padding-right: 10px;
     margin-bottom: 20px;
 `
 

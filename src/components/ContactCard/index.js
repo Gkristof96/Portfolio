@@ -1,6 +1,7 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
-import { CardContainer, Title, Name, Email, Subject, Form, Button } from '../ContactCard/ContactCardElements'
+import { CardContainer, Title} from '../ContactCard/ContactCardElements'
+import '../../Contact.css';
 
 const ContactCard = () => {
     const sendEmail = (e) => {
@@ -20,14 +21,12 @@ const ContactCard = () => {
                 <Title>
                     Írj nekem
                 </Title>
-                <Form onSubmit={sendEmail}>
-                    <Name>
-                    </Name>
-                    <Email></Email>
-                    <Subject name='message'>
-                    </Subject >
-                    <Button></Button>
-                </Form>
+                <form onSubmit={sendEmail}>
+                    <input type="text" name='name' placeholder='Név' />
+                    <input type='email' name='email' placeholder='Email' />
+                    <textarea className='message' name='message' />
+                    <input className='btn' type='submit' value='Küldés' />
+                </form>
             </CardContainer>
         </>
     )

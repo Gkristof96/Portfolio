@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactContainer, ContactWrapper, TextWrapper, Description, Mail, City} from './ContactElements'
+import { ContactContainer, ContactWrapper, TextWrapper,CardWrapper, Description, Mail, City} from './ContactElements'
 import { Title } from '../TitleElements'
 import ContactCard from '../ContactCard'
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa'
@@ -15,7 +15,9 @@ const Contact = () => {
                             <Mail><FaEnvelope />{`  kristef.g@gmail.com`}</Mail>
                             <City><FaMapMarkerAlt />{`  Zalaegerszeg`}</City>
                         </TextWrapper>
-                  <ContactCard />
+                        <CardWrapper>
+                            <ContactCard />
+                        </CardWrapper>
               </ContactWrapper>
           </ContactContainer>  
         </>
