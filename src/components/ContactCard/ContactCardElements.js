@@ -6,6 +6,7 @@ export const CardContainer = styled.div`
     height: 550px;
     background: #0092CA;
     border-radius: 5px;
+    margin-top: 70px;
     margin-right: 50px;
     justify-self: flex-end;
     align-self: center;
@@ -49,15 +50,19 @@ export const Input = styled.input.attrs({
   `
 export const Name = styled(Input).attrs({
     type: 'text',
-    placeholder: 'Name',
+    name: 'name',
+    placeholder: 'Név',
 })``
 
 export const Email = styled(Input).attrs({
     type: 'email',
+    name: 'email',
     placeholder: 'Email',
 })``
 
-export const Subject = styled.textarea`
+export const Subject = styled.textarea.attrs({
+    name: 'message',
+})`
     height: 150px;
     border-radius: 5px;
     border: none;
@@ -73,7 +78,7 @@ export const Subject = styled.textarea`
 
 export const Button = styled.input.attrs({
     type: "submit",
-    value: 'Send',
+    value: 'Küldés',
   })`
   width: 200px;
   height: 75px;

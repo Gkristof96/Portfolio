@@ -12,8 +12,8 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'  />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Üdvözöllek az oldalamon</HeroH1>
-                <HeroP>This is my portfolio page, where you can see some of my projects</HeroP>
+                <HeroH1>Üdvözöllek az oldalamon!</HeroH1>
+                <HeroP>Itt megismerhetsz hogy ki is vagyok, valamint láthatod néhány korábbi projektem.</HeroP>
                 <HeroBtnWrapper>
                     <ButtonS
                     smooth={true} duration={500} spy={true} exact="true" offset={-100}
@@ -21,7 +21,7 @@ const HeroSection = () => {
                     big={true}
                     dark={true}
                     rounded={true}
-                    onMouseEnter={onHover} onMouseLeave={onHover} to='projects'>See more {hover ? <ArrowForward /> : <ArrowRight />}</ButtonS>
+                    onMouseEnter={onHover} onMouseLeave={onHover} to='projects'>Tudj meg többet{hover ? <ArrowForward /> : <ArrowRight />}</ButtonS>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

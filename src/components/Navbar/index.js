@@ -20,17 +20,17 @@ const Navbar = ({toggle}) => {
         <>
         <Nav scroll={scroll}>
             <NavbarContainer>
-                <NavLogo to='/'>
-                    Kristóf's Site
+                <NavLogo smooth={true} duration={500} spy={true} exact="true" offset={-100} to='home'>
+                    Kristóf's Portfolio
                 </NavLogo>
                 <HamburgerIcon onClick={toggle}>
                     <FaBars />
                 </HamburgerIcon>
                 <NavMenu>
-                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='about'>About</NavLinks></NavItem>
-                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='projects'>Projects</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='about'>Rólam</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='projects'>Projektek</NavLinks></NavItem>
                     <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='skills'>Skills</NavLinks></NavItem>
-                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='contact'>Contact</NavLinks></NavItem>
+                    <NavItem><NavLinks smooth={true} duration={500} spy={true} exact="true" offset={-100} to='contact'>Kapcsolat</NavLinks></NavItem>
                 </NavMenu>
             </NavbarContainer>
         </Nav>

@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     header: 'About me',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+    description: 'Gerencsér Kristóf vagyok, 24 éves Frontend fejlesztő. Jelenleg Zalaegerszegen élek, és Győrben tanulok mint Mérnökinformatikus. Már gyerekkoromtól kezdve érdekeltek a kreatív tevékenységek, ezért is választottam ezt a szakmát magamnak. Amikor éppen nem programozok, vagy sportolók valamit vagy a barátaimmal vagyok, legjobb esetben ezt egyszerre teszem. A sport általában a konditermi edzést jelenti, de nagyon szeretek squasholni és mtb kerékpározni is, amik közben több időt tölthetek a barátaimmal.',
     imgStart: false,
     img: require('../../images/me.jpg'),
     alt: 'me',

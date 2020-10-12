@@ -9,18 +9,18 @@ export const CardContainer = styled.div`
     margin: 0 10px;
     padding: 25px;
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr 2.5fr 3fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 'title' 'image' 'desc' 'button';
     @media (max-width: 1200px) {
-        grid-template-rows: 1fr 2.5fr 2fr 1fr;
+        grid-template-rows: 1fr 2.5fr 3fr 1fr;
         max-width: 325px;
     }
     @media (max-width: 768px) {
+        grid-template-rows: 1fr 2.5fr 2fr 1fr;
         max-width: 300px;
         margin: 10px 0;
     }
-
     &:hover {
         transform: scale(1.009);
     }
@@ -42,6 +42,6 @@ export const Description = styled.p`
     @media screen and (max-width: 768px) {
         align-self: center;
         font-size: 14px;
-        tex-align: left;
+        text-align: left;
     }
 `

@@ -59,7 +59,7 @@ export const HeroP = styled.p`
     color: #fff;
     font-size: 36px;
     text-align: center;
-    max-width: 70%;
+    max-width: 80%;
     @media screen and (max-width: 768px) {
         font-size: 24px;
     }

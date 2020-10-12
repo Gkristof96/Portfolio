@@ -10,10 +10,10 @@ const Sidebar = ({isOpen, toggle}) => {
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='about'>About</SidebarLinks>
-                <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='projects'>Projects</SidebarLinks>
+                <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='about'>Rólam</SidebarLinks>
+                <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='projects'>Projektek</SidebarLinks>
                 <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='skills'>Skills</SidebarLinks>
-                <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='contact'>Contact</SidebarLinks>
+                <SidebarLinks smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={toggle} to='contact'>Kapcsolat</SidebarLinks>
             </SidebarMenu>
         </SidebarWrapper>
     </SidebarContainer>
