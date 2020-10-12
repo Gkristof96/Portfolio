@@ -7,7 +7,6 @@ import ContactSection from '../components/ContactSection'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import { homeObjOne } from '../components/AboutSection/Data'
 
 const Home = () => {
     const [ isOpen, setIsOpen] = useState(false)
@@ -18,7 +17,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
-            <AboutSection {...homeObjOne}/>
+            <AboutSection/>
             <ProjectsSection  />
             <SkillsSection />
             <ContactSection />
