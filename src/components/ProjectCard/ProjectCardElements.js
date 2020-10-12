@@ -12,9 +12,10 @@ export const CardContainer = styled.div`
     grid-template-rows: 1fr 2.5fr 3fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 'title' 'image' 'desc' 'button';
-    @media (max-width: 1200px) {
+    @media (max-width: 1376px) {
         grid-template-rows: 1fr 2.5fr 3fr 1fr;
         max-width: 325px;
+        height: 400px;
     }
     @media (max-width: 768px) {
         grid-template-rows: 1fr 2.5fr 2fr 1fr;

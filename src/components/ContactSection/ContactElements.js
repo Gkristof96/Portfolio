@@ -13,6 +13,7 @@ export const ContactWrapper = styled.div`
     grid-template-rows: 1.5fr 8fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'title title' 'col1 col2';
+    grid-column-gap: 10px;
 
     @media screen and (max-width: 768px) {
         height: auto;
@@ -27,9 +28,9 @@ export const TextWrapper = styled.div`
     color: #eee;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    margin: 70px 0;
+    margin: 50px 0;
     margin-left: 50px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1376px) {
         font-size: 20px;
         margin: 70px 25px;
     }

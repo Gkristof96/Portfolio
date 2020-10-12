@@ -24,8 +24,8 @@ const ContactCard = () => {
                     <Name>
                     </Name>
                     <Email></Email>
-                    <Subject>
-                    </Subject>
+                    <Subject name='message'>
+                    </Subject >
                     <Button></Button>
                 </Form>
             </CardContainer>

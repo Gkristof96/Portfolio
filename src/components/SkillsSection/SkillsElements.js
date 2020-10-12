@@ -32,7 +32,7 @@ export const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: 25px 0;
-    @media (max-width: 1200px) {
+    @media (max-width: 1376px) {
         font-size: 20px;
     }
     @media screen and (max-width: 768px) {

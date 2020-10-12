@@ -6,12 +6,13 @@ export const CardContainer = styled.div`
     height: 550px;
     background: #0092CA;
     border-radius: 5px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-right: 50px;
     justify-self: flex-end;
     align-self: center;
-    @media (max-width: 1200px) {
-        width: 350px
+    @media (max-width: 1376px) {
+        height: 400px;
+        width: 375px;
     }
     @media screen and (max-width: 768px) {
         margin: 50px 0;
@@ -37,7 +38,7 @@ export const Form = styled.form`
 export const Input = styled.input.attrs({
     type: "text",
   })`
-  height: 50px;
+    height: 50px;
     border-radius: 5px;
     border: none;
     margin-bottom: 30px;
@@ -47,6 +48,11 @@ export const Input = styled.input.attrs({
     &:focus {
         outline: none;
     }
+    @media (max-width: 1376px) {
+        height: 30px;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
   `
 export const Name = styled(Input).attrs({
     type: 'text',
@@ -60,19 +66,21 @@ export const Email = styled(Input).attrs({
     placeholder: 'Email',
 })``
 
-export const Subject = styled.textarea.attrs({
-    name: 'message',
-})`
+export const Subject = styled.textarea`
     height: 150px;
     border-radius: 5px;
     border: none;
+    resize: none;
     margin-bottom: 30px;
     padding: 10px;
-    resize: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     &:focus {
         outline: none;
+    }
+    @media (max-width: 1376px) {
+        height: 100px;
+        font-size: 18px;
     }
 `
 
@@ -89,4 +97,12 @@ export const Button = styled.input.attrs({
   font-size: 24px;
   text-align: center;
   border-radius: 5px;
+  @media (max-width: 1376px) {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 40px
+  }
 `

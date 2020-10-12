@@ -39,7 +39,7 @@ export const TextWrapper = styled.div`
     padding: 0 10px;
     padding-right: 100px;
     text-align: justify;
-    @media (max-width: 1200px) {
+    @media (max-width: 1376px) {
         font-size: 20px;
         padding: 0 10px;
     }
@@ -54,7 +54,7 @@ export const Img = styled.img`
     height: 350px;
     border-radius: 5px;
     box-shadow: 0 4px 4px 3px rgba(0,0,0,0.25);
-    @media (max-width: 1200px) {
+    @media (max-width: 1376px) {
         width: 250px;
         height: 250px;
     }

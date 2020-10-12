@@ -12,29 +12,33 @@ export const Nav = styled.nav`
     top: 0;
     margin-top: -100px;
     z-index: 10;
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 768px) {
         height: 80px;
+        margin-top: -80px;
         transition: 0.8s all ease;
     }
 `
 
 export const NavbarContainer = styled.div`
     display: flex;
+    align-items: center;
     justify-content: space-between;
     z-index: 1;
     padding: 0 24px;
-    width: 80%
+    width: 80%;
+    position: relative;
 `
 
 export const NavLogo = styled(LinkS)`
     color: #fff;
-    justify-self: flex-start;
-    align-item: flex-start;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 32px;
     display: flex;
     font-weight: bold;
     text-decoration: none;
+    @media screen and (max-width: 1376px) {
+        font-size: 24px;
+    }
 
 `
 
@@ -43,9 +47,8 @@ export const HamburgerIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        top: 40px;
-        transform: translateY(-50%);
-        right: 25px;
+        right: 0;
+        top: 0;
         font-size: 1.8rem;
         cursor:pointer;
         color: #fff;
@@ -54,7 +57,6 @@ export const HamburgerIcon = styled.div`
 
 export const NavMenu = styled.ul`
     display: flex;
-    align-items: center;
     list-style: none;
     text-align: center;
     margin-right: -22px;
@@ -77,6 +79,10 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    @media screen and (max-width: 1376px){
+        font-size: 18px;
+        padding: 0 0.25rem;
+    }
     &:hover {
         color: #0092ca;
         transition: 0.2s ease-in-out;
