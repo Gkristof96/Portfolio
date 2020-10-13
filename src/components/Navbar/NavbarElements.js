@@ -3,18 +3,16 @@ import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({scroll}) => (scroll ? '#222' : 'transparent')};
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    margin-top: -100px;
+    margin-top: -80px;
     z-index: 10;
     @media screen and (max-width: 768px) {
-        height: 80px;
-        margin-top: -80px;
         transition: 0.8s all ease;
     }
 `

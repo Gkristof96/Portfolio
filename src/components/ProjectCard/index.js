@@ -15,7 +15,7 @@ const ProjectCard = ({title, image, description, url}) => {
                     big={true}
                     dark={true}
                     href={url}>
-                    See More
+                    Tudj meg többet
                 </ButtonR>
             </CardContainer>
         </>

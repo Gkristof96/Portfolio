@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
 
 export const AboutWrapper = styled.div`
     display: grid;
-    height: 90vh;
+    height: calc(100vh - 80px);
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;

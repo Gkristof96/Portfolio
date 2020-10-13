@@ -16,7 +16,7 @@ const HeroSection = () => {
                 <HeroP>Itt megismerhetsz hogy ki is vagyok, valamint láthatod néhány korábbi projektem.</HeroP>
                 <HeroBtnWrapper>
                     <ButtonS
-                    smooth={true} duration={500} spy={true} exact="true" offset={-100}
+                    smooth={true} duration={500} spy={true} exact="true" offset={-80}
                     primary={true}
                     big={true}
                     dark={true}

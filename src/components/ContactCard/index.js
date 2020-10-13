@@ -6,7 +6,6 @@ import '../../Contact.css';
 const ContactCard = () => {
     const sendEmail = (e) => {
         e.preventDefault();
-    
         emailjs.sendForm('gmail', 'template_h95q1ua', e.target, 'user_XKwWTJXKqLvBZMOufAXCz')
           .then((result) => {
               console.log(result.text);
@@ -24,7 +23,7 @@ const ContactCard = () => {
                 <form onSubmit={sendEmail}>
                     <input type="text" name='name' placeholder='Név' />
                     <input type='email' name='email' placeholder='Email' />
-                    <textarea className='message' name='message' />
+                    <textarea className='message' name='message' data-gramm_editor="false"/>
                     <input className='btn' type='submit' value='Küldés' />
                 </form>
             </CardContainer>

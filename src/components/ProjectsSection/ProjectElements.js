@@ -7,7 +7,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsWrapper = styled.div`
     display: grid;
-    height: 90vh;
+    height: calc(100vh - 80px);
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;
@@ -23,11 +23,12 @@ export const ProjectsWrapper = styled.div`
 export const CardWrapper = styled.div`
     grid-area: row2;
     display: flex;
+    padding-bottom: 50px;
     justify-content: space-around;
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 25px;
+        padding-bottom: 25px;
     }
 `
 

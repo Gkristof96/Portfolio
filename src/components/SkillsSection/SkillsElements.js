@@ -7,10 +7,10 @@ export const SkillsContainer = styled.div`
 
 export const SkillsWrapper = styled.div`
     display: grid;
-    height: 90vh;
+    height: calc(100vh - 80px);
     max-width: 80%;
     margin: 0 auto;
-    grid-template-rows: 2r 8fr;
+    grid-template-rows: 2fr 8fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "title title" "col1 col2";
 
@@ -26,7 +26,6 @@ export const TextWrapper = styled.div`
     grid-area: col1;
     display: flex;
     align-items: center;
-    justify-content: center;
 `
 
 export const SkillWrapper = styled.div`
@@ -37,7 +36,7 @@ export const SkillWrapper = styled.div`
 export const Description = styled.p`
     color: #757575;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     @media (max-width: 1376px) {
         font-size: 20px;
     }

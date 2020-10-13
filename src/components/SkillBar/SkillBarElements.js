@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FullBar = styled.div`
-    margin-bottom: 30px;
+    margin: 15px 0;
     width: 500px;
     height: 40px;
     border-radius: 5px;

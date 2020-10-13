@@ -6,11 +6,11 @@ export const ContactContainer = styled.div`
 
 export const ContactWrapper = styled.div`
     display: grid;
-    height: 90vh;
+    height: calc(100vh - 80px);
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 'title title' 'col1 col2';
 
     @media screen and (max-width: 768px) {
@@ -26,6 +26,7 @@ export const TextWrapper = styled.div`
     color: #eee;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
+    padding: 25px 0;
     @media (max-width: 1376px) {
         font-size: 20px;
     }
@@ -37,6 +38,7 @@ export const CardWrapper = styled.div`
     grid-area: col2;
     display: flex;
     justify-content: center;
+    padding: 25px 0;
 `
 export const Description = styled.p`
     padding-right: 10px;
