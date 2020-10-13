@@ -8,14 +8,10 @@ export const CardContainer = styled.div`
     display: grid;
     margin: 0 25px;
     padding: 15px;
-    grid-template-rows:  0.75fr auto 2fr 0.75fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'title' 'image' 'desc' 'button';
     @media (max-width: 1376px) {
         max-width: 325px;
     }
     @media (max-width: 768px) {
-        grid-template-rows: 1fr 3fr 3fr 1fr;
         max-width: 300px;
         margin: 10px 0;
     }
@@ -24,14 +20,12 @@ export const CardContainer = styled.div`
     }
 `
 export const Img = styled.img`
-    grid-area: image;
     width: 90%;
     justify-self: center;
     border-radius: 5px;
 `
 
 export const Description = styled.p`
-    grid-area: desc;
     font-family: 'Roboto', sands-serif;
     color: #212121;
     font-size: 24px;

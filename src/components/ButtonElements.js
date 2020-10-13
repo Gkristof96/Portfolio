@@ -25,7 +25,6 @@ export const ButtonS = styled(LinkS)`
 `
 
 export const ButtonR = styled.a`
-    grid-area: button;
     border-radius: ${({rounded}) => (rounded ? '50px' : '5px')};
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
