@@ -3,11 +3,12 @@ import styled from 'styled-components'
 export const SkillsContainer = styled.div`
     background: #fff;
     color: #000;
+    height: 800px;
 `
 
 export const SkillsWrapper = styled.div`
     display: grid;
-    height: calc(100vh - 80px);
+    height: 100%;
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;
@@ -37,6 +38,7 @@ export const Description = styled.p`
     color: #757575;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
+    margin-right: 25px;
     @media (max-width: 1376px) {
         font-size: 20px;
     }

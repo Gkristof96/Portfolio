@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
     background: #fff;
+    height: 800px;
 `
 
 export const AboutWrapper = styled.div`
     display: grid;
-    height: calc(100vh - 80px);
+    height: 100%;
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;
@@ -14,7 +15,7 @@ export const AboutWrapper = styled.div`
     grid-template-areas: "title title" "col1 col2";
     @media (max-width: 768px) {
         height: auto;
-        grid-template-rows: 1fr 2fr auto;
+        grid-template-rows: 1fr 3fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: "title" "col1" "col2";
     }

@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
     background: #393E46;
+    height: 1000px;
 `
 
 export const ContactWrapper = styled.div`
     display: grid;
-    height: calc(100vh - 80px);
+    height: 100%;
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;

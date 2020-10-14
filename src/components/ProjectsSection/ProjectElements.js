@@ -3,11 +3,12 @@ import styled from 'styled-components'
 export const ProjectsContainer = styled.div`
     background: #222831;
     color: #000;
+    height: 800px;
 `
 
 export const ProjectsWrapper = styled.div`
     display: grid;
-    height: calc(100vh - 80px);
+    height: 100%;
     max-width: 80%;
     margin: 0 auto;
     grid-template-rows: 2fr 8fr;
