@@ -2,7 +2,10 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
     background: #393E46;
-    height: 1000px;
+    height: 900px;
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
 
 export const ContactWrapper = styled.div`
@@ -27,7 +30,7 @@ export const TextWrapper = styled.div`
     color: #eee;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    padding: 25px 0;
+    padding: 50px 0;
     @media (max-width: 1376px) {
         font-size: 20px;
     }
@@ -39,7 +42,7 @@ export const CardWrapper = styled.div`
     grid-area: col2;
     display: flex;
     justify-content: center;
-    padding: 25px 0;
+    padding: 50px 0;
 `
 export const Description = styled.p`
     padding-right: 10px;

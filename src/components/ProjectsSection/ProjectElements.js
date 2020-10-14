@@ -4,6 +4,9 @@ export const ProjectsContainer = styled.div`
     background: #222831;
     color: #000;
     height: 800px;
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
 
 export const ProjectsWrapper = styled.div`
@@ -24,8 +27,9 @@ export const ProjectsWrapper = styled.div`
 export const CardWrapper = styled.div`
     grid-area: row2;
     display: flex;
-    padding-bottom: 50px;
+    padding: 50px 0;
     justify-content: space-around;
+    align-items: flex-start;
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;

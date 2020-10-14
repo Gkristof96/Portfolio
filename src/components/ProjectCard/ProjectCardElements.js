@@ -1,24 +1,34 @@
 import styled  from 'styled-components'
 
 export const CardContainer = styled.div`
-    max-width: 500px;
+    width: 30%;
+    height: auto;
     background: #c4c4c4;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 0 25px;
-    padding: 25px;
+    margin: 0 10px;
+    padding: 20px;
+    @media (max-width: 1376px) {
+        max-width: 320px;
+    }
+    @media (max-width: 1023px) {
+        max-width: 175px;
+    }
     @media (max-width: 768px) {
+        width: 100%;
+        max-width: 400px;
         margin: 10px 0;
+        height: auto;
     }
     &:hover {
         transform: scale(1.009);
     }
 `
 export const Img = styled.img`
-    width: 75%;
+    width: 100%;
+    max-width: 300px;
     justify-self: center;
     border-radius: 5px;
 `
@@ -26,12 +36,14 @@ export const Img = styled.img`
 export const Description = styled.p`
     font-family: 'Roboto', sands-serif;
     color: #212121;
-    font-size: 24px;
-    margin: 25px 0;
+    height: 175px;
+    font-size: 22px;
+    margin: 20px 0;
     @media screen and (max-width: 1376px) {
-        font-size: 12px;
+        font-size: 18px;
     }
     @media screen and (max-width: 768px) {
+        height: auto;
         align-self: center;
         font-size: 18px;
     }
@@ -43,7 +55,7 @@ export const Button = styled.a`
     font-weight: bold;
     background: ${({primary}) => (primary ? '#0092ca' : '#010606')};
     white-space: nowrap;
-    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    padding: ${({big}) => (big ? '14px 48px' : '6px 6px')};
     color: ${({dark}) => (dark ? '#010606' : '#fff')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
@@ -55,6 +67,7 @@ export const Button = styled.a`
     align-items: center;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    width: 100%;
     &:hover {
         transition: all 0.2s ease-in-out;
         background: ${({primary}) => (primary ? '#fff' : '#01BF71')};

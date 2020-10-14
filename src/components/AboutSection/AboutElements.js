@@ -3,6 +3,9 @@ import styled from 'styled-components'
 export const AboutContainer = styled.div`
     background: #fff;
     height: 800px;
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
 
 export const AboutWrapper = styled.div`

@@ -4,12 +4,13 @@ export const CardContainer = styled.div`
     background: #0092CA;
     border-radius: 5px;
     width: 70%;
-    max-height: 90%;
+    max-width: 400px;
+    height: 500px;
     display: grid;
     grid-template-rows: 0.5fr minmax(5fr,auto);
     grid-template-areas: 'title' 'form';
     @media (max-width: 1376px) {
-
+        
     }
     @media screen and (max-width: 768px) {
         width: 90%;

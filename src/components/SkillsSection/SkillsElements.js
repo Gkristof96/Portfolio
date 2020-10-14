@@ -4,6 +4,9 @@ export const SkillsContainer = styled.div`
     background: #fff;
     color: #000;
     height: 800px;
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
 
 export const SkillsWrapper = styled.div`

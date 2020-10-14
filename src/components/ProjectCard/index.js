@@ -6,7 +6,7 @@ const ProjectCard = ({title, image, description, url}) => {
     return (
         <>
             <CardContainer>
-                {/*<Title lightText={false} bigText={false}>{title}</Title>*/}
+                <Title lightText={false} bigText={false}>{title}</Title>
                 <Img src={image}/>
                 <Description>{description}</Description>
                 <Button 
