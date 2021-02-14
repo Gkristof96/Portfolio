@@ -42,6 +42,9 @@ export const Description = styled.p`
     @media screen and (max-width: 1376px) {
         font-size: 18px;
     }
+    @media screen and (max-width: 1024px) {
+        font-size: 12px;
+    }
     @media screen and (max-width: 768px) {
         height: auto;
         align-self: center;
